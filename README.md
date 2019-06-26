@@ -44,12 +44,12 @@ Mas ao salvar ele recarrega automaticamente bem rápido.
 
 # Links Úteis
 
-Styled Componentes: https://www.youtube.com/watch?v=R3S8DEzEn6s
-React Navigation: https://reactnavigation.org/
-Expo: https://docs.expo.io/versions/latest/
-BarCodeScanner: https://docs.expo.io/versions/v33.0.0/sdk/bar-code-scanner/
-React Hooks: https://www.youtube.com/watch?v=6WB16wZS61c
-React Navigation Hooks: https://github.com/react-navigation/hooks
+- Styled Componentes: https://www.youtube.com/watch?v=R3S8DEzEn6s
+- React Navigation: https://reactnavigation.org/
+- Expo: https://docs.expo.io/versions/latest/
+- BarCodeScanner: https://docs.expo.io/versions/v33.0.0/sdk/bar-code-scanner/
+- React Hooks: https://www.youtube.com/watch?v=6WB16wZS61c
+- React Navigation Hooks: https://github.com/react-navigation/hooks
 
 
 
