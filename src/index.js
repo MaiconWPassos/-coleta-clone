@@ -2,11 +2,9 @@ import React from 'react'
 import styled, { ThemeProvider } from 'styled-components/native'
 import theme from './config/theme'
 import {
-  createDrawerNavigator,
   createAppContainer,
   createStackNavigator,
   createSwitchNavigator,
-  DrawerItems
 } from 'react-navigation'
 
 
@@ -18,16 +16,10 @@ import Login from './screens/Login'
 import Home from './screens/Home'
 
 
-import Drawer from './components/Drawer'
+import Novo from './screens/Novo'
+import Produtos from './screens/Novo/Produtos'
 
-/**
- *   Cria um drawer estilizado passando nossos parametros
- */
-const CustomDrawerComponent = props => (
-  <Drawer>
-    <DrawerItems {...props} />
-  </Drawer>
-);
+
 
 /**
  * Cria tela de Login da aplicação
@@ -38,16 +30,24 @@ const AuthStack = createStackNavigator({
     navigationOptions: { header: null }
   }
 });
+
+
+
 /**
  * Cria as outras telas da aplicação
  */
-const AppStack = createDrawerNavigator({
+const AppStack = createStackNavigator({
   Home: {
-    screen: Home,
-    header: null
+    screen: Home
   },
-}, {
-    contentComponent: CustomDrawerComponent
+  Novo: {
+    screen: Novo
+  },
+  Produtos: {
+    screen: Produtos
+  }
+  }, {
+    headerMode: 'none',
   });
 
 /**
@@ -64,7 +64,7 @@ const App = createAppContainer(createSwitchNavigator(
     Auth: AuthStack,
   },
   {
-    initialRouteName: 'AuthLoading',
+    initialRouteName: 'AuthLoading'
   }
 ));
 

@@ -4,7 +4,7 @@ export const Container = styled.View`
   flex: 1;
   align-items: center;
   justify-content: center;
-  background-color: ${props => props.theme.light};
+  background-color: ${props => props.theme.primary};
 `;
 
 export const Logo = styled.Image`
@@ -29,6 +29,8 @@ export const Button = styled.TouchableHighlight`
     margin-right: 20px;
     padding: 16px 20px;
     align-self: stretch;
+    border-width: 1px;
+    border-color: #fff;
     border-radius: 3px;
     background-color: ${props => props.theme.primary};
 `;

@@ -1,16 +1,12 @@
 import styled from 'styled-components/native'
 
-
-export const ContainerScroll = styled.ScrollView`
-    flex: 1;
-    flex-direction: column;
-`;
-
+//  COntainer principal da tela
 export const Container = styled.View`
     flex: 1;
     flex-direction: column;
 `;
 
+//  Container do logo
 export const ContainerLogo = styled.View`
     flex:1;
     width: 100%;
@@ -19,26 +15,39 @@ export const ContainerLogo = styled.View`
     padding-top: 30px;
 `;
 
-export const ContainerButtons = styled.ScrollView`
-    flex:2;
-    padding: 3%;
-`;
-
-export const Buttons = styled.View`
-    flex:1;
-    align-items:center;
-    justify-content: center;
-    flex-direction: row;
-`;
-
+// Logo
 export const Logo = styled.Image`
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 83px;
 `;
 
-export const Button = styled.TouchableOpacity`
-    width: 100px;
-    margin-left: 5%;
-    height: 100px;
-    background-color: ${props => props.theme.primary};
-`;
+// menu scroll
+export const Scroll = styled.ScrollView`
+  height: 120;
+`
+
+// navegacao do Menu scroll
+export const NavegacaoContainer = styled.View`
+  flex:1;
+`
+
+// Caixa dos botoes
+export const ViewNavegacao = styled.View`
+  flex-direction: row;
+  margin-left: 25px;
+`
+//  botao
+export const BoxNavegacao = styled.TouchableOpacity`
+  background-color: ${props => props.theme.primaryTransparence};
+  height: 100;
+  width: 100;
+  margin-right: 10;
+  border-radius: 3;
+  padding: 8px;
+  justify-content: space-between;
+`
+// Titulo do Botao
+export const Titulo = styled.Text`
+  color: #FFF;
+  font-size: 16;
+`
