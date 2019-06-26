@@ -5,7 +5,7 @@
 Baixe e instale o NodeJS 
 Você pode encontrá-lo aqui: [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
 
-### Yarn (Opicional)
+### Yarn (Opcional)
 Baixe a instale ferramenta de linha de comando Yarn
 Aqui: [https://yarnpkg.com/lang/pt-br/docs/install/](https://yarnpkg.com/lang/pt-br/docs/install/)
 
